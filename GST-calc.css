@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.calculator-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="number"], .gst-rates {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.gst-rates {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#calculateBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#clearBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.results-container {
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.results-container p {
+    display: flex;
+    justify-content: space-between;
+}

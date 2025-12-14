@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator</title>
+    <link rel="stylesheet" href="GST-calc.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>GST Calculator</h1>
+        <div class="input-group">
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+        <div class="input-group">
+            <label>Select GST Rate:</label>
+            <div class="gst-rates">
+                <input type="radio" id="gst5" name="gst_rate" value="5" checked>
+                <label for="gst5">5%</label>
+                <input type="radio" id="gst12" name="gst_rate" value="12">
+                <label for="gst12">12%</label>
+                <input type="radio" id="gst18" name="gst_rate" value="18">
+                <label for="gst18">18%</label>
+                <input type="radio" id="gst28" name="gst_rate" value="28">
+                <label for="gst28">28%</label>
+                 <input type="radio" id="gst40" name="gst_rate" value="40">
+                <label for="gst28">28%</label>
+            </div>
+        </div>
+        <div class="button-group">
+            <button id="calculateBtn">Calculate</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+        <div id="results" class="results-container">
+            <h2>Results</h2>
+            <p><strong>Base Amount:</strong> <span id="baseAmount"></span></p>
+            <p><strong>CGST:</strong> <span id="cgstAmount"></span></p>
+            <p><strong>SGST:</strong> <span id="sgstAmount"></span></p>
+            <p><strong>Total GST:</strong> <span id="totalGst"></span></p>
+            <p><strong>Total Amount:</strong> <span id="totalAmount"></span></p>
+        </div>
+    </div>
+    <script src="GST-calc.js"></script>
+</body>
+</html>
